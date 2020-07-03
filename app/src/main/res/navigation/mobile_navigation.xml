@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.shancreation.sliatelms.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_Notification"
+        android:name="com.shancreation.sliatelms.ui.Notification.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/notification_fragment" />
+
+    <fragment
+        android:id="@+id/nav_Chat"
+        android:name="com.shancreation.sliatelms.ui.Chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/chat_fragment" />
+    <fragment
+        android:id="@+id/nav_Files"
+        android:name="com.shancreation.sliatelms.ui.Files.FileFragment"
+        android:label="File"
+        tools:layout="@layout/file_fragment" />
+</navigation>
